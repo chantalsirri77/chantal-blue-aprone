@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+button{
+    cursor:pointer;
+}
+header{
+    .head_div{
+        // width: 100%;
+        // z-index: 98;
+        background-color: $global_color; 
+        .header_container{
+            position:sticky;
+            bottom: 0;
+            padding-top:10px;
+            background-color: $global_color;
+            @include display_element_flex(center);
+            @include container(92%,4%);
+            .logo_div{
+                width: 90px;
+                height: 51px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            nav{
+                padding: 0px 180px 0px 0px;
+                ul{
+                    @include display_element_flex(center);
+                    li{
+                        @include style_type;
+                        padding:0px 40px 0px 0px;
+                        a{
+                            font-size:$nav_font;
+                            font-family: 'Noto Sans', sans-serif;
+                            text-decoration:none;
+                            color:$nav_links_color;
+                            &:hover{
+                                color:$nav_links_hover_color;
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+            .login_section{
+                @include display_element_flex(center);
+                .login_btn{
+                    font-family: 'Noto Sans', sans-serif;
+                    color:$nav_links_color;
+                    font-size:$nav_font;
+                    border:none;
+                    background-color:transparent;
+                    margin:0px 15px 0px 0px;
+        
+                    &:hover{
+                        color:$nav_links_hover_color;
+                    }
+                }
+                .signup_btn{
+                    font-family: 'Noto Sans', sans-serif;
+                    color:$global_color;
+                    font-size:$nav_font;
+                    border:none;
+                    border-radius: 3px;
+                    background-color:$orange_color;
+                    padding:10px 25px 10px 25px;
+                
+                    &:hover{
+                        color:$global_color;
+                    }
+                }
+            }
+
+        }
+    }
+    .hero_div{
+        background-image:url('../../images/hero-img.png');
+        background-size: contain;
+        background-repeat:no-repeat;
+        height:600px;
+        width:100%;
+        .banner{
+            width: 50%;
+            padding-top:150px;
+            h1{
+                font-family:'Times New Roman', Times, serif;
+                color:$hero_button_color;
+                font-size:$banner_font;
+                text-align:center;
+                width: 70%;
+            }
+            .banner_btn{
+                font-family: 'Noto Sans', sans-serif;
+                color:$global_color;
+                font-size:$nav_font;
+                font-weight: 600;
+                letter-spacing: 5px;
+                background-color:$hero_button_color;
+                width:220px;
+                border-radius:50px;
+                text-align: center;
+                padding:15px;
+                margin:40px 0px 0px 30px;
+                outline: none;
+                border:none;
+            }
+        }
+    }
+}
