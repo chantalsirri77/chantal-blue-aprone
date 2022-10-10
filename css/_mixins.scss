@@ -1,0 +1,13 @@
+@mixin container ($width, $margin_left) {
+    width:$width;
+    margin-left:$margin_left;
+}
+@mixin display_element_flex ($align) {
+    display:flex;
+    justify-content: space-between;
+    align-items: $align;
+}
+@mixin style_type {
+    list-style: none;
+    text-decoration: none;
+}
