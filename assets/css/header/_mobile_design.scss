@@ -1,17 +1,8 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-button{
-    cursor:pointer;
-}
+
 header{
     .head_div{
         background-color: $global_color; 
         .header_container{
-            position:sticky;
-            bottom: 0;
             padding-top:10px;
             background-color: $global_color;
             @include display_element_flex(center);
@@ -25,6 +16,7 @@ header{
                 }
             }
             nav{
+                display: none;
                 padding: 0px 180px 0px 0px;
                 ul{
                     @include display_element_flex(center);
@@ -46,6 +38,7 @@ header{
             }
             
             .login_section{
+                
                 @include display_element_flex(center);
                 .login_btn{
                     font-family: 'Noto Sans', sans-serif;
@@ -54,6 +47,7 @@ header{
                     border:none;
                     background-color:transparent;
                     margin:0px 15px 0px 0px;
+                    display: none;
         
                     &:hover{
                         color:$nav_links_hover_color;
@@ -67,53 +61,34 @@ header{
                     border-radius: 3px;
                     background-color:$orange_color;
                     padding:10px 25px 10px 25px;
-                
+                    display: none;
                     &:hover{
                         color:$global_color;
                     }
                 }
             }
             .hamburger{
-                width: 25px;
-                height:25px;
-                background-color: transparent;
-                border: none;
-                outline: none;
-                margin-left:10px;
-                display: none;
-                .mid_bar{
-                    width: 100%;
-                    background-color: rgba(8, 8, 8, 0.185);
-                    height:2px;
-                    margin: 7px 0px 7px 0px;
-                   
-
-                }
-                .first_bar, .third_bar{
-                    width: 100%;
-                    background-color: rgba(8, 8, 8, 0.295);
-                    height:2px;
-                }
-
+                display: block;
             }
 
         }
     }
     .hero_div{
-        background-image:url('../../images/hero-img.png');
-        background-size: contain;
+        background-image:url('../../../images/mobile-splash-v2\ \(1\).png');
+        background-size: cover;
         background-repeat:no-repeat;
-        height:600px;
+        height:570px;
         width:100%;
+        background-position: 50% 50%;
         .banner{
-            width: 50%;
-            padding-top:150px;
+            width:60%;
+            margin-left: 20%;
+            padding-top:50px;
             h1{
                 font-family:'Times New Roman', Times, serif;
                 color:$hero_button_color;
-                font-size:$banner_font;
-                text-align:center;
-                width: 70%;
+                font-size:32px;
+                width:350px;
             }
             .banner_btn{
                 font-family: 'Noto Sans', sans-serif;
@@ -126,7 +101,8 @@ header{
                 border-radius:50px;
                 text-align: center;
                 padding:15px;
-                margin:40px 0px 0px 30px;
+                // margin:auto;
+                margin:40px 0px 0px 20%;
                 outline: none;
                 border:none;
             }
