@@ -1,7 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 button {
@@ -11,66 +13,96 @@ button {
 header .head_div {
   background-color: #ffffff;
 }
+
 header .head_div .header_container {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   padding-top: 10px;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 92%;
   margin-left: 4%;
 }
+
 header .head_div .header_container .logo_div {
   width: 90px;
   height: 51px;
 }
+
 header .head_div .header_container .logo_div svg {
   width: 100%;
   height: 100%;
 }
+
 header .head_div .header_container nav {
   padding: 0px 180px 0px 0px;
 }
+
 header .head_div .header_container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .head_div .header_container nav ul li {
   list-style: none;
   text-decoration: none;
   padding: 0px 40px 0px 0px;
 }
+
 header .head_div .header_container nav ul li a {
   font-size: 13px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   text-decoration: none;
   color: #6a6d75;
 }
+
 header .head_div .header_container nav ul li a:hover {
   color: #0f346c;
 }
+
 header .head_div .header_container .login_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .head_div .header_container .login_section .login_btn {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #6a6d75;
   font-size: 13px;
   border: none;
   background-color: transparent;
   margin: 0px 15px 0px 0px;
 }
+
 header .head_div .header_container .login_section .login_btn:hover {
   color: #0f346c;
 }
+
 header .head_div .header_container .login_section .signup_btn {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #ffffff;
   font-size: 13px;
   border: none;
@@ -78,9 +110,11 @@ header .head_div .header_container .login_section .signup_btn {
   background-color: #f26226;
   padding: 10px 25px 10px 25px;
 }
+
 header .head_div .header_container .login_section .signup_btn:hover {
   color: #ffffff;
 }
+
 header .head_div .header_container .hamburger {
   width: 25px;
   height: 25px;
@@ -90,37 +124,43 @@ header .head_div .header_container .hamburger {
   margin-left: 10px;
   display: none;
 }
+
 header .head_div .header_container .hamburger .mid_bar {
   width: 100%;
   background-color: rgba(8, 8, 8, 0.185);
   height: 2px;
   margin: 7px 0px 7px 0px;
 }
+
 header .head_div .header_container .hamburger .first_bar, header .head_div .header_container .hamburger .third_bar {
   width: 100%;
   background-color: rgba(8, 8, 8, 0.295);
   height: 2px;
 }
+
 header .hero_div {
   background-image: url("../../images/hero-img.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   width: 100%;
 }
+
 header .hero_div .banner {
   width: 50%;
   padding-top: 150px;
 }
+
 header .hero_div .banner h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #002c9b;
   font-size: 40px;
   text-align: center;
   width: 70%;
 }
+
 header .hero_div .banner .banner_btn {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
@@ -139,13 +179,15 @@ header .hero_div .banner .banner_btn {
   width: 100%;
   padding: 6%;
 }
+
 .section_one .section_heading {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #002c9b;
   font-size: 40px;
   text-align: center;
   width: 100%;
 }
+
 .section_one .heading_description {
   padding-top: 1%;
   font-size: 20px;
@@ -156,35 +198,169 @@ header .hero_div .banner .banner_btn {
   line-height: 1;
   padding-bottom: 3%;
 }
+
 .section_one .section_one_images {
+  display: -ms-grid;
   display: grid;
   width: 100%;
-  grid-template-columns: auto auto auto;
-  -moz-column-gap: 3.5%;
-       column-gap: 3.5%;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-column-gap: 3.5%;
+          column-gap: 3.5%;
 }
+
 .section_one .section_one_images .gallery_item {
   width: 100%;
 }
+
 .section_one .section_one_images .gallery_item .gallery_image img {
   width: 100%;
 }
+
 .section_one .section_one_images .gallery_item h4 {
   font-size: 15px;
   font-weight: bold;
   width: 100%;
   text-align: center;
 }
+
 .section_one .section_one_images .gallery_item .gallery_description {
   width: 100%;
   text-align: center;
 }
 
+.section-three-container {
+  background-image: url("../../images/section three/img-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+.container .box {
+  max-width: 614px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* padding: 50px; */
+  /* gap: 10px; */
+}
+
+.container .box .content {
+  padding: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box .content h1 {
+  color: #00a0df;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.container .box .content .changeable {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  color: #002c9b;
+  font-weight: 900;
+  padding-bottom: 18px;
+}
+
+.container .box .content .line {
+  background: #00a0df;
+  height: 5px;
+  width: 100px;
+  margin-top: 12px;
+}
+
+.container .box .content .person {
+  padding-top: 30px;
+  color: #002c9b;
+  letter-spacing: 2.4px;
+  font-size: 16px;
+}
+
+.container .box img {
+  width: 100%;
+}
+
+/* 
+p::before {
+    content: "Before Blue Apron, I tried HelloFresh. Blue Apron beats them on all counts—directions, freshness, packing, and prep.";
+    animation-name: change;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes change {
+    0%{
+        content: "My entire family loves the dishes I make! This truly makes my life easier as a working mom! It allows my family to sit down together and enjoy our dinner. I love that my kids love it.";
+    }
+
+    20% {
+        content: "Before Blue Apron, I tried HelloFresh. Blue Apron beats them on all counts—directions, freshness, packing, and prep.";
+    }
+
+    40% {
+        content: "We love Blue Apron! It eliminates a ton of food waste while allowing us to try new things and have tasty meals. Really great quality food, awesome flavors, and things we wouldn't otherwise have any idea how to create.";
+    }
+
+    80% {
+        content: "We changed from HelloFresh to Blue Apron and it was the best choice we made!";
+    }
+
+    100% {
+        content: "We’d tried many other food delivery services and none of them have compared in quality and variety to Blue Apron.";
+    }
+} */
 @media (max-width: 960px) {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   button {
     cursor: pointer;
@@ -198,9 +374,15 @@ header .hero_div .banner .banner_btn {
     bottom: 0;
     padding-top: 10px;
     background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 92%;
     margin-left: 4%;
   }
@@ -217,9 +399,15 @@ header .hero_div .banner .banner_btn {
     padding: 0px 180px 0px 0px;
   }
   header .head_div .header_container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .head_div .header_container nav ul li {
     list-style: none;
@@ -228,7 +416,7 @@ header .hero_div .banner .banner_btn {
   }
   header .head_div .header_container nav ul li a {
     font-size: 13px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     color: #6a6d75;
   }
@@ -236,12 +424,18 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .head_div .header_container .login_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .head_div .header_container .login_section .login_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #6a6d75;
     font-size: 13px;
     border: none;
@@ -253,7 +447,7 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .head_div .header_container .login_section .signup_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     border: none;
@@ -298,13 +492,13 @@ header .hero_div .banner .banner_btn {
     padding-top: 130px;
   }
   header .hero_div .banner h1 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #002c9b;
     font-size: 30px;
     width: 250px;
   }
   header .hero_div .banner .banner_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
@@ -324,9 +518,15 @@ header .hero_div .banner .banner_btn {
   header .hero_div .banner .banner_btn header .head_div .header_container {
     padding-top: 10px;
     background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 92%;
     margin-left: 4%;
   }
@@ -343,9 +543,15 @@ header .hero_div .banner .banner_btn {
     padding: 0px 180px 0px 0px;
   }
   header .hero_div .banner .banner_btn header .head_div .header_container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .hero_div .banner .banner_btn header .head_div .header_container nav ul li {
     list-style: none;
@@ -354,7 +560,7 @@ header .hero_div .banner .banner_btn {
   }
   header .hero_div .banner .banner_btn header .head_div .header_container nav ul li a {
     font-size: 13px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     color: #6a6d75;
   }
@@ -362,12 +568,18 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .hero_div .banner .banner_btn header .head_div .header_container .login_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .hero_div .banner .banner_btn header .head_div .header_container .login_section .login_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #6a6d75;
     font-size: 13px;
     border: none;
@@ -379,7 +591,7 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .hero_div .banner .banner_btn header .head_div .header_container .login_section .signup_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     border: none;
@@ -408,13 +620,13 @@ header .hero_div .banner .banner_btn {
     padding-top: 50px;
   }
   header .hero_div .banner .banner_btn header .hero_div .banner h1 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #002c9b;
     font-size: 32px;
     width: 350px;
   }
   header .hero_div .banner .banner_btn header .hero_div .banner .banner_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
@@ -429,6 +641,7 @@ header .hero_div .banner .banner_btn {
     border: none;
   }
 }
+
 @media (max-width: 765px) {
   header .head_div {
     background-color: #ffffff;
@@ -436,9 +649,15 @@ header .hero_div .banner .banner_btn {
   header .head_div .header_container {
     padding-top: 10px;
     background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 92%;
     margin-left: 4%;
   }
@@ -455,9 +674,15 @@ header .hero_div .banner .banner_btn {
     padding: 0px 180px 0px 0px;
   }
   header .head_div .header_container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .head_div .header_container nav ul li {
     list-style: none;
@@ -466,7 +691,7 @@ header .hero_div .banner .banner_btn {
   }
   header .head_div .header_container nav ul li a {
     font-size: 13px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     color: #6a6d75;
   }
@@ -474,12 +699,18 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .head_div .header_container .login_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .head_div .header_container .login_section .login_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #6a6d75;
     font-size: 13px;
     border: none;
@@ -491,7 +722,7 @@ header .hero_div .banner .banner_btn {
     color: #0f346c;
   }
   header .head_div .header_container .login_section .signup_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     border: none;
@@ -520,13 +751,13 @@ header .hero_div .banner .banner_btn {
     padding-top: 50px;
   }
   header .hero_div .banner h1 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #002c9b;
     font-size: 32px;
     width: 350px;
   }
   header .hero_div .banner .banner_btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
@@ -540,4 +771,5 @@ header .hero_div .banner .banner_btn {
     outline: none;
     border: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

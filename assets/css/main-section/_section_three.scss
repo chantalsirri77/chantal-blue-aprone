@@ -1,0 +1,125 @@
+.section-three-container {
+    // background-color: red;
+    background-image:url('../../images/section three/img-1.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    // background-color: red;
+
+    .box {
+        max-width: 614px;
+        background-color: white;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 50px; */
+        /* gap: 10px; */
+
+        .content {
+            padding: 52px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                color: #00a0df;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: normal;
+                font-weight: 700;
+                padding-bottom: 30px;
+            }
+
+            .changeable {
+                text-align: center;
+                font-size: 24px;
+                font-weight: normal;
+                color: #002c9b;
+                font-weight: 900;
+                padding-bottom: 18px;
+
+            }
+
+            .line {
+                background: #00a0df;
+                height: 5px;
+                width: 100px;
+                margin-top: 12px;
+            }
+
+            .person {
+                padding-top: 30px;
+                color: #002c9b;
+                letter-spacing: 2.4px;
+                font-size: 16px;
+            }
+
+
+
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+       
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+p::before {
+    content: "Before Blue Apron, I tried HelloFresh. Blue Apron beats them on all counts—directions, freshness, packing, and prep.";
+    animation-name: change;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes change {
+    0%{
+        content: "My entire family loves the dishes I make! This truly makes my life easier as a working mom! It allows my family to sit down together and enjoy our dinner. I love that my kids love it.";
+    }
+
+    20% {
+        content: "Before Blue Apron, I tried HelloFresh. Blue Apron beats them on all counts—directions, freshness, packing, and prep.";
+    }
+
+    40% {
+        content: "We love Blue Apron! It eliminates a ton of food waste while allowing us to try new things and have tasty meals. Really great quality food, awesome flavors, and things we wouldn't otherwise have any idea how to create.";
+    }
+
+    80% {
+        content: "We changed from HelloFresh to Blue Apron and it was the best choice we made!";
+    }
+
+    100% {
+        content: "We’d tried many other food delivery services and none of them have compared in quality and variety to Blue Apron.";
+    }
+} */

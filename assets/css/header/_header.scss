@@ -99,9 +99,10 @@ header{
 
         }
     }
+    
     .hero_div{
         background-image:url('../../images/hero-img.png');
-        background-size: contain;
+        background-size: cover;
         background-repeat:no-repeat;
         height:600px;
         width:100%;

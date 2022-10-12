@@ -2,6 +2,7 @@
 @import './mixins';
 @import './header/header';
 @import './main-section/section_one';
+@import './main-section/section_three';
 
 @media (max-width:960px){
     @import './header/tablet_design';
